@@ -1,0 +1,34 @@
+{
+    "productName": "aixhc-databoard",
+    "version": "0.0.0",
+    "identifier": "com.aixhc.databoard",
+    "build": {
+        "beforeDevCommand": "yarn dev",
+        "devUrl": "http://localhost:1420",
+        "beforeBuildCommand": "yarn build",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "数据查询面版",
+                "width": 1024,
+                "height": 600
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
+    }
+}
